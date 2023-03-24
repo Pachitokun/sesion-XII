@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./image/wallpaper.jpg);
+    background-size: cover;
+}
+.navbar{
+    position: absolute;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+.navbar a{
+    color: black;
+}
+.navbar .logo{
+    font-size: 1em;
+    font-weight: bold;
+    filter: drop-shadow(10px 10px 10px #ffffff);
+}
+.navbar .nav-links ul {
+    display: flex;
+}
+.navbar .nav-links ul li{
+    margin: 0 45px;
+}
+.navbar .nav-links ul li.active a{
+ color: #5e5e5e;
+ font-weight: 600;
+}
+@media screen and (max-width: 900px){
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar .img-menu{
+    display: block;
+}
+    .nav-links {
+    top: 0;
+    left: 0;
+        position: absolute;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .nav-links ul{
+display: flex;
+flex-direction: column;
+align-items: center;
+    }
+    .navbar .nav-links ul li{
+        margin: 25px 0px;
+        border-bottom: #ffffff;
+    }
+    
+}
+
+
+
+.img-menu{
+    display: none;
+    color: #fff;
+    filter: drop-shadow(4px 1px 12px #ffffff);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+    background: transparent;
+}
